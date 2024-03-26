@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 const NavBar = () => {
   const [ nav, setNav ] = useState(false)
   return (
-    <div className="flex justify-between items-center w-11/12 h-20 p-5 m-10 text-black bg-white rounded-lg shadow-sm fixed">
+    <div className="flex justify-between items-center w-11/12 h-20 text-gray-900 ml-10 mt-10 bg-white rounded-lg shadow-sm">
 
       <div>
         <h1 className="text-5xl font-signature ml-2 font-bold cursor-default">Ravi</h1>

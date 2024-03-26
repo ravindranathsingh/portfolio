@@ -22,3 +22,7 @@
         animation: moveLeft 7s linear infinite;
       }
 }
+
+body {
+  background-color: #7752FE;
+}
