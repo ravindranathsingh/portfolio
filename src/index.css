@@ -11,7 +11,7 @@
     }
     @keyframes moveLeft {
       0% {
-        transform: translateX(0);
+        transform: translateX(5%);
       }
       100% {
         transform: translateX(-30%);
