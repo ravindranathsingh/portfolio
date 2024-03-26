@@ -1,28 +1,25 @@
 import React from 'react'
-import { IoArrowRedo } from "react-icons/io5";
+import profileDp from '../assets/git_dp.png'
 
 const Home = () => {
   return (
-    <div name="home" className="h-screen w-full bg-gradient-to-b from-indigo-50 via-indigo-500 to-indigo-500">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
-          <h2>
-            I'm a Technical Suppport Engineer-II
-          </h2>
-          <p>
-          Working as a Technical Support Engineer-II with 2.5 years of experience at Dell Technologies through Wipro. 
-          Backend engineer specializing in critical Storage Area Networks for global institutions, ensuring high availability through proactive and reactive measures.
-          </p>
+    <div className="flex flex-row h-screen bg-gradient-to-b from-blue-200 via-blue-300 to-indigo-500">
+      <div className="h-screen flex flex-col justify-center px-14">
+        <div>
+          <img src={profileDp} alt="display profile" className="w-40 h-40 m-2 rounded-full"/>
         </div>
         <div>
-          <button className="text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-blue-500 to-blue-500">
-            Portfolio
-            <span>
-              <IoArrowRedo />
-            </span>
-          </button>
+          <button className="text-3xl w-40 font-bold bg-white p-2 m-2 rounded-lg">
+            I'm Ravi
+            </button>
         </div>
-        
+        <div>
+          <button className="text-2xl font-bold p-4">Biography</button>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center">
+        <h2 className="text-3xl font-bold py-4">Title</h2>
+        <h3 className="text-5xl font-extrabold">Technical Support <br/ >Engineer-II</h3>
       </div>
     </div>
   )
