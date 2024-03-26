@@ -9,4 +9,16 @@
     html {
         font-family: "Raleway", sans-serif;
     }
+    @keyframes moveLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-30%);
+      }
+      }
+      
+      .moving-text {
+        animation: moveLeft 7s linear infinite;
+      }
 }
