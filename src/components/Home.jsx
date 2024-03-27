@@ -46,9 +46,9 @@ const Home = () => {
 
       <div>
         <div className="bg-white flex flex-col w-60 p-5 h-16 ml-5 rounded-xl relative overflow-hidden shadow">
-          <span className="flex flex-row justify-between absolute top-4 left-4 transform -translate-y-1/2 moving-text">
-            <GoNorthStar size={30} className="text-indigo-500"/>
-            <p className="font-bold text-1xl pl-3 text-nowrap">LATEST WORKS AND LEARNINGS</p>
+          <span className="flex flex-row justify-between absolute top-5 left-4 transform -translate-y-1/2 moving-text">
+            <GoNorthStar size={25} className="text-indigo-500"/>
+            <p className="font-bold text-1xl pl-3 text-nowrap ease-in duration-500">LATEST WORKS AND LEARNINGS</p>
           </span>
         </div>
         <div className="bg-white flex flex-col justify-evenly items-center h-96 w-60 ml-5 mt-5 rounded-xl shadow">
@@ -59,10 +59,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
-
-      </div>
-
+      
     </div>
   )
 }
