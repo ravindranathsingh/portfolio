@@ -8,19 +8,18 @@ import { GoNorthStar } from "react-icons/go";
 
 const Home = () => {
   return (
-    <div className="w-full h-full flex flex-row py-10">
+    <div className="flex flex-col">
 
-      <div className="flex flex-col justify-center bg-white w-64 h-96 pl-14 rounded-xl shadow ml-14">
+      <div className="w-full h-full flex flex-row py-10 md:flex">
+
+      <div className="flex flex-col justify-center bg-white w-64 h-64 pl-14 rounded-xl shadow ml-14">
         <div>
-          <img src={profileDp} alt="display profile" className="w-40 h-40 my-4 rounded-full"/>
+          <img src={profileDp} alt="display profile" className="w-36 h-36 my-4 rounded-full"/>
         </div>
         <div>
           <button className="text-3xl w-40 py-2 pl-3 font-bold rounded-lg bg-indigo-600 flex flex-row text-white">
             I'm Ravi <CiLocationArrow1 className="p-0 m-0 pt-1 size-8"/>
             </button>
-        </div>
-        <div>
-          <button className="text-xl font-bold p-4">Biography</button>
         </div>
       </div>
 
@@ -51,16 +50,40 @@ const Home = () => {
             <p className="font-bold text-1xl pl-3 text-nowrap ease-in duration-500">LATEST WORKS AND LEARNINGS</p>
           </span>
         </div>
-        <div className="bg-white flex flex-col justify-evenly items-center h-96 w-60 ml-5 mt-5 rounded-xl shadow">
+        <div className="bg-white flex flex-col justify-evenly items-center h-40 w-60 ml-5 mt-8 rounded-xl shadow">
           <h3 className="text-6xl font-bold">2.5+</h3>
           <p className="text-2xl font-bold text-gray-500">Years Experience</p>
-          <h3 className="text-6xl font-bold">6+</h3>
-          <p className="text-2xl font-bold text-gray-500">Projects</p>
         </div>
-      </div>
-
-      
+      </div>      
     </div>
+
+    <div className="flex flex-row">
+      <div className="w-64 h-40 bg-white rounded-xl shadow ml-14">
+        <h3 className="p-5 text-2xl font-bold">
+          Articles & Publications
+        </h3>
+        <span className="flex flex-row justify-evenly pt-5">
+          <p className="text-gray-500 font-bold">All Blog</p>
+          <button>          
+            <FaCircleArrowRight size={30}/>
+          </button>
+        </span>        
+      </div>
+      <div className="w-96 h-72 bg-white rounded-xl shadow ml-5">
+        <h3 className="p-5 text-2xl font-bold">
+          Service Offering
+        </h3>
+        <span className="flex flex-row justify-evenly pt-5">
+          <p className="text-gray-500 font-bold">All Service</p>
+          <button>          
+            <FaCircleArrowRight size={30}/>
+          </button>
+        </span>        
+      </div>
+    </div>
+    
+    </div>
+    
   )
 }
 
